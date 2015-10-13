@@ -1,0 +1,90 @@
+
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+html{
+	font-size: 21px;
+}
+
+img {
+	max-width: 100%;
+}
+
+p{
+	line-height: 1.5
+}
+
+.header {
+	background-color: #fcb514;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e2/Elephant_skin_(2806040179).jpg');
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	
+}
+.header button{
+	font-size: 16px;
+	padding: 1em 6em ;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	border: 2px solid gray;
+	border-radius: 1px;
+	background-color: #fcb514;
+	transition: all 0.75s;
+
+}
+.header button:hover{
+	 background-color: red;
+	 transform: scale(1.25);
+}
+.header img{
+	
+	border-radius: 10px;
+
+
+}
+
+/*helpers*/
+.text-center{
+	text-align: center;
+
+}
+.bg-gray{
+	background-color: #f1f1f1;
+}
+
+.wrap{
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section{
+	padding: 1em 6em ;
+}
+
+/*grid part*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.gridthird h3{
+	margin: 2px;
+}
+
+@media (min-width: 768px) { /* styles for desktop */
+	.grid{
+		max-width: 80%px;
+		margin-left: auto;
+		margin-right:auto;
+	}
+	.grid-third {
+		float: left;
+		width: 33%;
+
+	}
